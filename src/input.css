@@ -11,3 +11,25 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
         }
 }
+
+body {
+    font-family: 'Inter' , sans-serif;
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] block my-[5px] bg-dark rounded-full
+}
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45 translate-y-[8px]
+}
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45 -translate-y-[6px]
+} 
+.hamburger-active > span:nth-child(2){
+    @apply opacity-0 translate-x-2 w-3 
+} 
+
+
+
+
+
