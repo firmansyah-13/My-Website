@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Leckerli+One&display=swap" rel="stylesheet">
     <title>My Website</title>
 </head>
-<body class="bg-slate-100">
+<body class="bg-slate-100 " >
     <!-- Header Start -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ">
         <div class="container">
@@ -18,18 +18,36 @@
                     <a href="home" class="py-6 font-bold text-Primary ">ViciCode</a>
                 </div>
                 <div class="flex items-center px-4">
-                    <button type="button" id="hamburger" name="hamburger" class="absolute block right-4">
+                    <button type="button" id="hamburger" name="hamburger" class="absolute block right-4 lg:hidden">
                         <span class="hamburger-line  transition-transform duration-500"></span>
                         <span class="hamburger-line transition-all duration-700"></span>
                         <span class="hamburger-line transition-transform duration-500"></span>
                     </button>
                 </div>
+                <!-- Nav-menu -->
+                <nav id="nav-menu" class="hidden absolute py-2 w-full top-full bg-teal-50 rounded-lg shadow-lg lg:static lg:flex lg:justify-end lg:rounded-none lg:shadow-none lg:bg-slate-100">
+                    <ul class="block">
+                        <li class="group"><a href="#home" class="text-base text-dark py-2 px-8 flex font-medium group-hover:text-Primary transition-all duration-500 ease-in-out">Home </a></li>
+                    </ul>
+                    <ul class="block">
+                        <li class="group"><a href="#about" class="text-base text-dark py-2 px-8 flex font-medium group-hover:text-Primary transition-all duration-500 ease-in-out">About</a></li>
+                    </ul>
+                    <ul class="block">
+                        <li class="group"><a href="#blog" class="text-base text-dark py-2 px-8 flex font-medium group-hover:text-Primary transition-all duration-500 ease-in-out">Blog</a></li>
+                    </ul>
+                    <ul class="block">
+                        <li class="group"><a href="#portfolio" class="text-base text-dark py-2 px-8 flex font-medium group-hover:text-Primary transition-all duration-500 ease-in-out">Portfolio</a></li>
+                    </ul>
+                    <ul class="block">
+                        <li class="group"><a href="#contact" class="text-base text-dark py-2 px-8 flex font-medium group-hover:text-Primary transition-all duration-500 ease-in-out">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
     <!-- Header End -->
     <!-- Hero Section start -->
-    <section id="home" class="pt-36 ">
+    <section id="home" class="pt-32 ">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-5 lg:w-1/2 lg:px-12 mb-6">
@@ -37,7 +55,7 @@
                     <h2 class="text-lg mb-5 font-medium  text-slate-600">Self taught programmer & Blogger</h2>
                     <p class="text-slate-500 leading-relaxed mb-10 lg:text-lg ">"if you dont't sacrifice for what you want, What you want becomes <span class="text-dark font-bold">the Sacrifice</span>"</p>
 
-                    <a href="#" class="text-base font-semibold py-3 px-8 bg-Primary rounded-full text-teal-50 hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out ">Contact me</a>
+                    <a href="#contact" class="text-base font-semibold py-3 px-8 bg-Primary rounded-full text-teal-50 hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out ">Contact me</a>
                 </div>
                 <!-- image start -->
                 <div class="w-full self-end px-4 lg:w-1/2">
@@ -56,7 +74,7 @@
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="about" class="pt-28 pb-32">
+    <section id="about" class="pt-28">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-5 mb-9 lg:w-1/2">
@@ -65,7 +83,7 @@
                     <p class="text-slate-600 max-w-md lg:text-lg " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quae repellendus quasi! Lorem ipsum dolor sit.</p>
                 </div>
                 
-                <div class="w-full px-4 mb-2 lg:w-1/2 pt-5">
+                <div id="contact" class="w-full px-4 mb-1 lg:w-1/2 pt-5">
                     <h3 class="font-semibold text-slate-700 lg:text-2xl">Contact</h3>
                     <p class="text-slate-600 max-w-md mb-3 lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa animi ut totam, fuga quasi illo ratione atque? Lorem ipsum dolor sit.</p>
                     <div class="flex items-center ">
@@ -88,6 +106,57 @@
         </div>
     </section>
     <!-- About Sectiom End -->
+    <!-- Portfolio Section start-->
+    <section id="portfolio" class="pt-28 pb-16">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h2 class="mb-2 text-Primary font-bold text-lg">Portfolio</h2>
+                    <h4 class="mx-auto text-dark font-bold mb-3 text-xl">New Project</h4>
+                    <p class="text-slate-600 font-medium ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque earum illo pariatur!</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center">
+                <div class="mb-4 p-3 md:w-1/2 md:px-7 md:py-4">
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                        <img src="/dist/img/2023-12-11-08-41-44.png" width="w-full"> 
+                    </div>
+                    <h4 class="font-semibold text-lg text-dark mt-4 mb-3 ">Simple landing page</h4>
+                    <p class="text-base text-slate-600 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum nulla possimus officia!</p>
+                </div>
+                <div class="mb-4 p-3 md:w-1/2 md:px-7 md:py-4">
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                        <img src="/dist/img/2023-12-11-08-41-44.png" width="w-full"> 
+                    </div>
+                    <h4 class="font-semibold text-lg text-dark mt-4 mb-3 ">Simple landing page</h4>
+                    <p class="text-base text-slate-600 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum nulla possimus officia!</p>
+                </div>
+                <div class="mb-4 p-3 md:w-1/2 md:px-7 md:py-4">
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                        <img src="/dist/img/2023-12-11-08-41-44.png" width="w-full"> 
+                    </div>
+                    <h4 class="font-semibold text-lg text-dark mt-4 mb-3 ">Simple landing page</h4>
+                    <p class="text-base text-slate-600 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum nulla possimus officia!</p>
+                </div>
+                <div class="mb-4 p-3 md:w-1/2 md:px-7 md:py-4">
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                        <img src="/dist/img/2023-12-11-08-41-44.png" width="w-full"> 
+                    </div>
+                    <h4 class="font-semibold text-lg text-dark mt-4 mb-3 ">Simple landing page</h4>
+                    <p class="text-base text-slate-600 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum nulla possimus officia!</p>
+                </div>
+                <div class="mb-4 p-3 md:w-1/2 md:px-7 md:py-4">
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                        <img src="/dist/img/2023-12-11-08-41-44.png" width="w-full"> 
+                    </div>
+                    <h4 class="font-semibold text-lg text-dark mt-4 mb-3 ">Simple landing page</h4>
+                    <p class="text-base text-slate-600 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum nulla possimus officia!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section end -->
 
     <!-- Script JS -->
     <script src="dist/js/script.js"></script>
